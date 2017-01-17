@@ -14,6 +14,14 @@ namespace Day2
             Warrior grom = new Warrior("Grommash");
             Warrior soap = new Warrior("Soap McTavish");
 
+            while (grom.currentState == State.Alive)
+            {
+                soap.Attack(grom);
+            }
+            Console.WriteLine(soap);
+            Console.WriteLine(grom);
+
+            /*
             soap.Attack(grom);
             Console.WriteLine(soap);
             Console.WriteLine(grom);
@@ -23,6 +31,12 @@ namespace Day2
 
             soap.Attack(grom);
             soap.Attack(grom);
+            soap.Attack(grom);
+            soap.Attack(grom);
+            soap.Attack(grom);
+            Console.WriteLine(soap);
+            Console.WriteLine(grom);
+            */
         }
 
         private static void DogStuff()
