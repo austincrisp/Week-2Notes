@@ -10,6 +10,23 @@ namespace Day2
     {
         static void Main(string[] args)
         {
+            // DogStuff();
+            Warrior grom = new Warrior("Grommash");
+            Warrior soap = new Warrior("Soap McTavish");
+
+            soap.Attack(grom);
+            Console.WriteLine(soap);
+            Console.WriteLine(grom);
+            soap.Attack(grom);
+
+            grom.Attack(soap);
+
+            soap.Attack(grom);
+            soap.Attack(grom);
+        }
+
+        private static void DogStuff()
+        {
             var wilkins = new Dog("Wilkins");
             wilkins.HappyBirthday();
             var age = wilkins.GetAge();
